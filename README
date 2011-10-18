@@ -1,0 +1,23 @@
+This small utility is for basic server monitoring. What it does is that it monitors your
+minecraft-server, and checks if the exit-code is "bad", and if so, it restarts the server.
+
+Very useful if you don't want to rely on things like scripts which are crontabbed to run
+like every 30 seconds or so, just to check if the server is up.
+
+With this script you'll only get a downtime of a few seconds meanwhile the server boots up
+again. Please note that at this moment the script doesn't check for anything, it just
+goes with what you tells it to use, so please edit with care.
+
+Basic installation and configuration:
+
+If you're using the vanilla minecraft-server.jar, just copy this script into your
+server directory and chmod it to 755, making it executable. Then just type:
+
+./server-watch.sh
+
+and just like that, you're up and running.
+
+If you on the other hand uses any server mod which requires another jar to be loaded
+than default, then you have to edit the $server-variable in server-watch.sh to match
+the name of your jar-file. If you're using bukkit, just comment out the non-commented
+line and remove the comment in front of the bukkit-line and you should be all set.
