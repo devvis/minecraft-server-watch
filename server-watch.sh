@@ -22,7 +22,6 @@ server="java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui";
 ############################################################################
 ver="1.0"
 
-
 echo "serverscript v$ver by devvis started"
 echo "Running on `uname -o`"
 
